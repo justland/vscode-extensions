@@ -27,81 +27,6 @@
   "projectFolderMinDepth": 2,
   "projects": [
     {
-      "packageName": "@just-web/github-pages",
-      "projectFolder": "docs/github-pages",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-func/play-solid",
-      "projectFolder": "apps/just-func/play-solid",
-      "reviewCategory": "production"
-    },
-    {
-      "packageName": "@just-func/play-react",
-      "projectFolder": "apps/just-func/play-react",
-      "reviewCategory": "production"
-    },
-    {
-      "packageName": "@just-web/platform",
-      "projectFolder": "frameworks/platform",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/app",
-      "projectFolder": "frameworks/app",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/contributions",
-      "projectFolder": "frameworks/contributions",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/errors",
-      "projectFolder": "frameworks/errors",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/format",
-      "projectFolder": "frameworks/format",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/log",
-      "projectFolder": "frameworks/log",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/repo-scripts",
-      "projectFolder": "tools/repo-scripts",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/states",
-      "projectFolder": "frameworks/states",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/testing",
-      "projectFolder": "tools/testing",
-      "reviewCategory": "tools"
-    },
-    {
-      "packageName": "@just-web/commands",
-      "projectFolder": "frameworks/commands",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/routes",
-      "projectFolder": "plugins/routes",
-      "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "@just-web/react-commands",
-      "projectFolder": "components/react-commands",
-      "reviewCategory": "libraries"
-    },
-    {
       "packageName": "vscode-just-func",
       "projectFolder": "tools/vscode-just-func",
       "reviewCategory": "libraries"
@@ -114,7 +39,7 @@
   ],
   "repository": {
     "defaultBranch": "main",
-    "url": "https://github.com/justland/just-web"
+    "url": "https://github.com/justland/vscode-extensions"
   },
   "rushVersion": "5.63.0",
   "variants": []
