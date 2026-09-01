@@ -2,3 +2,11 @@ packages:
   - tools/*
 
 minimumReleaseAge: 1440
+
+overrides:
+  # GHSA-76p3-8jx3-jpfq, GHSA-h4hr-7fg3-h35w — serialize-javascript, reached through
+  # mocha 11. GHSA-7q7g-4xm8-89cq — diff, same path.
+  # Added 2026-09-01. Drop both once mocha >= 12 is in devDependencies; mocha 12 already
+  # depends on serialize-javascript ^7.0.2 and diff ^9, so the overrides reach nothing then.
+  serialize-javascript: '>=7.0.5'
+  diff: '>=8.0.3'
