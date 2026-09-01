@@ -1,0 +1,10 @@
+name: pull-request
+on:
+  pull_request:
+  merge_group:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  code:
+    uses: justland/.github/.github/workflows/pnpm-verify.yml@main

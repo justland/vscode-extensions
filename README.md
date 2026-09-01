@@ -1,13 +1,17 @@
 # vscode-extensions
 
-VS Code extensions developments
+VS Code extensions developed by justland.
 
-Since the tool chain of VS Code extensions are quite different,
-it is beneficial to separate the development into its own repo.
+The VS Code extension toolchain differs enough from the rest of the ecosystem that these extensions
+live in their own repository.
 
-Currently, this repo contains `just-func` extensions.
-May expand it in the future or just create other repo and rename this one to be specific to `just-func`.
+| Extension | What it does |
+| --- | --- |
+| [`vscode-just-func`](./tools/vscode-just-func) | Syntax highlighting for the `just-func` language |
+| [`vscode-just-web`](./tools/vscode-just-web) | VS Code support for `just-web` applications |
+
+Neither extension is published to the VS Code Marketplace yet; both run from source.
 
 ## Contribute
 
-Please check out the [contributing guide](./CONTRIBUTING.md)
+Please check out the [contributing guide](./CONTRIBUTING.md).

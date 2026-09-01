@@ -1,36 +1,22 @@
 {
-  "cSpell.words": [
-    "clsx",
-    "cmds",
-    "codeql",
-    "depcheckrc",
-    "filenamify",
-    "immer",
-    "mdbook",
-    "noreply",
-    "npmjs",
-    "pnpm",
-    "pnpmfile",
-    "rushx",
-    "tsbuildinfo",
-    "TTFB",
-    "unshift",
-    "vite"
-  ],
-  "eslint.validate": [
-    "yaml"
-  ],
-  "files.associations": {
-    "**/common/config/rush/*.json": "jsonc",
-    "common/git-hooks/*": "shell",
-    "rush.json": "jsonc"
-  },
-  "json.schemas": [
-    {
-      "fileMatch": [
-        "tsconfig.*.json"
-      ],
-      "url": "http://json.schemastore.org/tsconfig"
-    }
-  ]
+	"cSpell.words": [
+		"biomejs",
+		"codeql",
+		"noreply",
+		"npmjs",
+		"pnpm",
+		"tmlanguage",
+		"tsbuildinfo",
+		"turborepo",
+		"vsce",
+		"vscodeignore"
+	],
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.formatOnSave": true,
+	"json.schemas": [
+		{
+			"fileMatch": ["tsconfig.*.json"],
+			"url": "http://json.schemastore.org/tsconfig"
+		}
+	]
 }
