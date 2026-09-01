@@ -4,7 +4,7 @@
 	"extends": ["config:recommended", ":preserveSemverRanges", ":semanticCommits"],
 	"minimumReleaseAge": "3 days",
 	"platformAutomerge": true,
-	"rebaseWhen": "behind-base-branch",
+	"rebaseWhen": "auto",
 	"packageRules": [
 		{
 			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
