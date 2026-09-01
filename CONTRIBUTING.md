@@ -2,39 +2,35 @@
 
 ## Prerequisites
 
-This repository uses [`rush`](https://rushjs.io/) with [pnpm](https://pnpm.io/).
-
-You need to setup your environment with them to work on this repository.
+This repository is a [pnpm](https://pnpm.io/) workspace driven by [turbo](https://turborepo.com/).
+Node.js is pinned in `.node-version`.
 
 ```sh
-# install rush globally
-npm install -g @microsoft/rush
-
-# install corepack for Node.js before 14.19.0 and 16.9.0 to use pnpm
-npm install -g corepack
-
-# or install pnpm directly
-npm install -g pnpm
-
-# enable pnpm with corepack
 corepack enable
+pnpm install
 ```
 
-If you already have `corepack` and the `pnpm` version is outdated:
+## Everyday commands
 
 ```sh
-corepack prepare pnpm@x.y.z --activate
+pnpm verify      # lint, build, and typecheck — what CI runs
+pnpm build       # compile every extension
+pnpm typecheck   # type-check without emitting
+pnpm lint:fix    # apply biome fixes
 ```
 
-## Setup
+## Running the extension tests
+
+`vscode-just-web` has integration tests that download VS Code and run it. They need a display, so
+they are not part of `pnpm verify` and do not run in CI:
 
 ```sh
-# setup repository
-rush update
+pnpm --filter vscode-just-web test
 ```
 
-## Frequently asked questions
+On Linux without a desktop session, wrap the command in `xvfb-run`.
 
-> what is that `2>&1` thing at the end of the script?
+## Commits
 
-It pipes `stderr` to `stdout` so that `rush` can ignore message that send to `stderr` by tools such as `jest`.
+Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/); a husky
+`commit-msg` hook runs commitlint. Neither extension is published, so no changeset is needed.
