@@ -2,6 +2,7 @@ packages:
   - tools/*
 
 minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
 
 overrides:
   # GHSA-76p3-8jx3-jpfq, GHSA-h4hr-7fg3-h35w — serialize-javascript, reached through
