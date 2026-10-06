@@ -8,7 +8,7 @@
 		"url": "https://github.com/justland/vscode-extensions.git"
 	},
 	"license": "MIT",
-	"packageManager": "pnpm@12.8.2",
+	"packageManager": "pnpm@12.9.0",
 	"scripts": {
 		"build": "turbo run build",
 		"clean": "turbo run clean",
